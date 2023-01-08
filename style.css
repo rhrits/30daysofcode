@@ -77316,18 +77316,19 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 #lab_social_icon_footer a {
-  color: #333;
+  color: #737373;
 }
 
 #lab_social_icon_footer .social:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
-}
+} 
+
 
 #lab_social_icon_footer .social {
   -webkit-transform: scale(0.8);
-  /* Browser Variations: */
+ 
   
   -moz-transform: scale(0.8);
   -o-transform: scale(0.8);
@@ -77335,9 +77336,9 @@ a.u-link.u-text-hover-grey-90:hover {
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
 }
-/*
-    Multicoloured Hover Variations
-*/
+
+
+
 
 
 
@@ -77357,4 +77358,5 @@ a.u-link.u-text-hover-grey-90:hover {
 
 #lab_social_icon_footer #social-em:hover {
   color: #c81c16;
-}
+} 
+
