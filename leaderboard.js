@@ -1,8 +1,4 @@
 // Get the search bar element
-
-
-/*
-
 const searchInput = document.getElementById('search-bar');
 
 // Add event listener to search bar
@@ -11,43 +7,14 @@ searchInput.addEventListener('input', searchTable);
 // Function to search the table
 function searchTable() {
   // Get the input value and convert to lowercase
-  const searchText = searchInput.value.toLowerCase();
+  const searchText = searchInput.value.toLowerCase().replace(/\s/g, ''); // remove any spaces in the search text
   // Get the table rows
   const rows = document.querySelectorAll('#leaderboard tbody tr');
 
   // Loop through each row and hide or show based on search text
   rows.forEach(row => {
-    const email = row.children[2].textContent.toLowerCase();
-    if (email.includes(searchText)) {
-      row.style.display = '';
-    } else {
-      row.style.display = 'none';
-    }
-  });
-
-  // Show the leaderboard if there are matching search results
-  const leaderboard = document.getElementById('leaderboard');
-  if (searchText.length > 0 && leaderboard.style.display === 'none') {
-    leaderboard.style.display = 'table';
-  }
-} */
-// Get the search bar element
-const searchInput = document.getElementById('search-bar');
-
-// Add event listener to search bar
-searchInput.addEventListener('input', searchTable);
-
-// Function to search the table
-function searchTable() {
-  // Get the input value and convert to lowercase
-  const searchText = searchInput.value.toLowerCase();
-  // Get the table rows
-  const rows = document.querySelectorAll('#leaderboard tbody tr');
-
-  // Loop through each row and hide or show based on search text
-  rows.forEach(row => {
-    const email = row.children[2].textContent.toLowerCase();
-    if (email.includes(searchText)) {
+    const email = row.children[2].textContent.toLowerCase().replace(/\s/g, ''); // remove any spaces in the email
+    if (email === searchText) { // use === to check for exact match
       row.style.display = '';
     } else {
       row.style.display = 'none';
