@@ -23,13 +23,13 @@
     width: 50%;
   }
   
-  th, td {
+  th,
+  td {
     text-align: left;
     padding: 8px;
   }
   
   /*
-  
   th {
     background-color: #4CAF50;
     color: white;
@@ -45,30 +45,56 @@
     display: none;
   }
   
-  
   .title {
     text-align: center;
     font-family: "Courier New", monospace;
     margin-top: 20px;
   }
-  .leaderboard{
-    text-align: center;
-    
-    font-family: "Courier New", monospace;
   
+  .leaderboard {
+    text-align: center;
+    font-family: "Courier New", monospace;
   }
-  .only{
+  
+  .only {
     background-color: #4CAF50;
     color: white;
   }
   
-
-  .new{
+  .new {
     text-align: center;
     font-family: "Courier New", monospace;
     color: #4CAF50;
   }
   
-  body{
-    font-size:x-large;
+  body {
+    font-size: x-large;
   }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 768px) {
+    #search-bar {
+      width: 100%;
+    }
+  
+    table {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .title,
+    .leaderboard {
+      font-size: large;
+    }
+  
+    #search-bar {
+      font-size: 14px;
+    }
+  
+    th,
+    td {
+      padding: 6px;
+    }
+  }
+  
