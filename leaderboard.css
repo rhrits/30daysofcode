@@ -62,4 +62,13 @@
     color: white;
   }
   
+
+  .new{
+    text-align: center;
+    font-family: "Courier New", monospace;
+    color: #4CAF50;
+  }
   
+  body{
+    font-size:x-large;
+  }
